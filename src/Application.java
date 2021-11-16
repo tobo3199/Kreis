@@ -12,8 +12,8 @@ import java.lang.reflect.Array;
  */
 public class Application {
 
-    private static final int width = 600;
-    private static final int height = 600;
+    private static final int width = 700;
+    private static final int height = 700;
 
     public static void main(String[] args) {
 
@@ -27,9 +27,13 @@ public class Application {
         //mainFrame.setSize(600, 600);
         //mainFrame.add(new Circle(50,200,5,5));
 
-        Circle[] pointList = new Circle[] {};
+        /*Circle[] pointList = new Circle[] {
+                new Circle(100,100,5, 5),
+                new Circle(50,50,5,5),
+                new Circle(100, 200,5,5)
+        };*/
 
-        mainFrame.add(new Circle(50,100,5,5));
+        mainFrame.add(new Circle());
 
 
         mainFrame.setVisible(true);
