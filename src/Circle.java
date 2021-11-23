@@ -2,6 +2,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.color.*;
+import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Circle extends JPanel{
@@ -15,15 +16,23 @@ public class Circle extends JPanel{
         int x;
         int y;
 
-        for (int i = 0; i < 3; i++) {
+        ArrayList <Integer> cordinates = new ArrayList<Integer>();
 
-                x = (int) Math.floor(Math.random() * (max - min + 1) + min);
-                y = (int) Math.floor(Math.random() * (max - min + 1) + min);
-                System.out.println(x);
-                System.out.println(y);
-                g.drawOval(x, y, 5, 5);
-                g.fillOval(x, y, 5, 5);
+        for (int i = 0; i < 1; i++) {
+
+            x = (int) Math.floor(Math.random() * (max - min + 1) + min);
+            y = (int) Math.floor(Math.random() * (max - min + 1) + min);
+            System.out.println("xr: " + x);
+            System.out.println("yr: " + y);
+            System.out.println("---------");
+            //g.drawOval(x, y, 5, 5);
+            g.fillOval(x, y, 5, 5);
+
+            cordinates.add(x);
+            cordinates.add(y);
         }
+
+        //cordinates.forEach( (n) -> { System.out.println(n); } );
     }
 
 
