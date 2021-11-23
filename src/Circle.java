@@ -1,10 +1,3 @@
-/**
- * Klasse:Circle
- *
- * @author: Tobias Sauter
- * @version:12.11.2021
- */
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.*;
@@ -14,7 +7,6 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Circle extends JPanel{
 
     public void paint (Graphics g){
-        //super.paint(g);
         setSize(1000, 1000);
 
         int circleCount = 3;
